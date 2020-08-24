@@ -161,7 +161,7 @@ class N2V(CARE):
 
     def terminate(self):
         """ Terminates Keras session to free GPU memory """
-        k.clear_session()
+        K.clear_session()
 
     def train(self, X, validation_X, epochs=None, steps_per_epoch=None):
         """Train the neural network with the given data.
